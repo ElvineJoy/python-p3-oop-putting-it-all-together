@@ -19,6 +19,8 @@ class Shoe:
     
     @size.setter
     def size(self, size):
+        '''validates size property is an integer'''
+        
         if not isinstance(size, int):
             print("size must be an integer")
         else:
