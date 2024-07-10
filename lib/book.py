@@ -19,6 +19,7 @@ class Book:
     
     @page_count.setter
     def page_count(self, page_count):
+        '''validates page_count property is an integer'''
         if not isinstance(page_count, int):
             print("page_count must be an integer")
         else:
